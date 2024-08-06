@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="PokemonSearchApp">
+    <meta property="og:description" content="One website can be searched every pokemon whom you want">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPok%25C3%25A9mon&psig=AOvVaw1MO5leYQUnCOv-k8tP4ii0&ust=1723018770211000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiU4qD334cDFQAAAAAdAAAAABAE">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemon-search-app</title>
+</head>
+
+<body>
+    <h1 class="title-page">Pokémon Search App</h1>
+    <main class="main-container">
+        <div class="search-active">
+            <label for="search-input">Search for Pokémon Name or ID:</label>
+            <div class="input-and-btn">
+                <input type="text" id="search-input" required>
+                <button type="button" id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="info-pokemon">
+            <div class="name-and-id">
+                <span class="color" id="pokemon-name"></span>
+                <span class="color" id="pokemon-id"></span>
+            </div>
+            <div class="weight-and-height">
+                <span class="color" id="weight"></span>
+                <span class="color" id="height"></span>
+            </div>
+            <div id="my-pokemon">
+
+            </div>
+            <div id="types"></div>
+        </div>
+        <div class="base-of-pokemon">
+            <div class="base">
+                <span class="name-base stylist">Base</span>
+                <span class="number-base stylist">Stats</span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">HP:</span>
+                <span class="number-base stylist" id="hp"></span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">Attack:</span>
+                <span class="number-base stylist" id="attack"></span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">Defense:</span>
+                <span class="number-base stylist" id="defense"></span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">Sp.Attack</span>
+                <span class="number-base stylist" id="special-attack"></span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">Sp.Defense</span>
+                <span class="number-base stylist" id="special-defense"></span>
+            </div>
+            <div class="base">
+                <span class="name-base stylist">Speed</span>
+                <span class="number-base stylist" id="speed"></span>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <span>Developed by VuKMA and not his idea</span>
+        <i class="fa-solid fa-fire"></i>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
